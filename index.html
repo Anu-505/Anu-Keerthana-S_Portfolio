@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,315 +5,238 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anu Keerthana | Portfolio</title>
 
-  <!-- Font: Poppins -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <!-- ===== Header / Navbar ===== -->
-  <header class="header">
-    <div class="container nav-container">
-      <div class="logo">
-        <span class="logo-dot"></span>
-        <span>AnuFolio</span>
+
+<!-- ===== Header ===== -->
+<header class="header">
+  <div class="container nav-container">
+    <div class="logo">
+      <span class="logo-dot"></span>
+      <span>AnuFolio</span>
+    </div>
+
+    <nav class="nav" id="nav-menu">
+      <a href="#hero" class="nav-link active">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#vision" class="nav-link">Vision</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="nav-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="hero">
+  <div class="container hero-inner reveal">
+
+    <div class="hero-text">
+      <p class="hero-tag">Hi, I am</p>
+      <h1 class="hero-title">Anu Keerthana S</h1>
+      <h2 class="hero-role">
+        Aspiring Data Analyst • AI & Data Science Student
+      </h2>
+
+      <p class="hero-summary">
+        I’m a B.Tech AI & Data Science student who loves exploring data,
+        building dashboards and creating clean web experiences.
+        I’m currently looking for internships and entry-level opportunities
+        in data analytics, AI & front-end development.
+      </p>
+
+      <div class="hero-actions">
+        <a href="https://docs.google.com/document/d/1aW79OYp7rn64mVw6M0WrnDxV6SUG_Nj0eV0nkROz2ms/edit"
+           target="_blank" class="btn btn-primary">
+          <i class="fa-solid fa-file-arrow-down"></i> Check Resume
+        </a>
+
+        <div class="hero-links">
+          <a href="https://github.com/Anu-505" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/anu-keerthana-465692305/"
+             target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PHOTO -->
+    <div class="hero-image">
+      <div class="hero-photo-ring">
+        <!-- ✅ Put your image inside repo & update name if needed -->
+        <img src="profile.png" alt="Anu Keerthana" class="hero-photo">
+      </div>
+      <div class="hero-badge">
+        <span class="dot"></span> Open to Internships
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== Skills ===== -->
+<section class="section" id="skills">
+  <div class="container reveal">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+
+      <div class="card">
+        <h3>Data & Programming</h3>
+        <div class="skill-chips">
+          <span class="chip">Python</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Excel</span>
+          <span class="chip">Power BI</span>
+          <span class="chip">Tableau</span>
+          <span class="chip">Google Colab</span>
+        </div>
       </div>
 
-      <nav class="nav" id="nav-menu">
-        <a href="#hero" class="nav-link active">About</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#vision" class="nav-link">Vision</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#education" class="nav-link">Education</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
+      <div class="card">
+        <h3>Web & Others</h3>
+        <div class="skill-chips">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Git & GitHub</span>
+          <span class="chip">Google Colab</span>
+        </div>
+      </div>
 
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-        <i class="fa-solid fa-bars"></i>
-      </button>
     </div>
-  </header>
+  </div>
+</section>
 
-  <!-- ===== Hero / About ===== -->
-  <section class="hero" id="hero">
-    <div class="container hero-inner reveal">
-      <div class="hero-text">
-        <p class="hero-tag">Hi, I am</p>
-        <h1 class="hero-title">Anu Keerthana S</h1>
-        <h2 class="hero-role">Aspiring Data Analyst • AI &amp; Data Science Student</h2>
-        <p class="hero-summary">
-          I’m a B.Tech AI &amp; Data Science student who loves exploring data,
-          building dashboards and creating clean web experiences.  
-          I’m currently looking for internships and entry-level opportunities
-          in data analytics, AI &amp; front-end development.
+<!-- ===== Vision ===== -->
+<section class="section" id="vision">
+  <div class="container reveal">
+    <h2 class="section-title">Visionary</h2>
+
+    <div class="vision-grid">
+      <div class="card">
+        <h3>Personalisation</h3>
+        <p>
+          I enjoy turning messy data into meaningful insights and
+          combining analytics with clean UI to tell clear stories.
         </p>
+      </div>
 
-        <div class="hero-actions">
-          <a
-            href="https://docs.google.com/document/d/1aW79OYp7rn64mVw6M0WrnDxV6SUG_Nj0eV0nkROz2ms/edit?usp=drivesdk"
-            target="_blank"
-            class="btn btn-primary"
-          >
-            <i class="fa-solid fa-file-arrow-down"></i>
-            Check Resume
+      <div class="card">
+        <h3>Reason To Hire Me</h3>
+        <p>
+          Curious, disciplined and passionate about learning.
+          I enjoy building real-world projects and improving step by step.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Projects ===== -->
+<section class="section" id="projects">
+  <div class="container reveal">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <article class="card project-card">
+        <h3>Rent Calculator</h3>
+        <p class="project-text">
+          A simple web app that helps users calculate monthly rent
+          with a clean and responsive UI.
+        </p>
+        <p class="project-tech">Tech used: HTML, CSS</p>
+
+        <div class="project-links">
+          <a href="https://anu-505.github.io/Rent-calculator-/"
+             target="_blank" class="btn btn-ghost">
+            <i class="fa-solid fa-play"></i> View Live
           </a>
 
-          <div class="hero-links">
-            <a href="https://github.com/Anu-505" target="_blank" aria-label="GitHub">
-              <i class="fa-brands fa-github"></i>
+          <a href="https://github.com/Anu-505/Rent-calculator-"
+             target="_blank" class="btn btn-ghost">
+            <i class="fa-brands fa-github"></i> View Code
+          </a>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="card project-card">
+        <h3>Spotify Data Analysis (Coming Soon)</h3>
+        <p class="project-text">
+          Exploring Spotify data to understand listening trends,
+          popular genres and audio features.
+        </p>
+        <p class="project-tech">
+          Tech planned: Python, Pandas, Power BI / Tableau
+        </p>
+
+        <div class="project-links">
+          <a href="https://github.com/Anu-505"
+             target="_blank" class="btn btn-ghost">
+            <i class="fa-brands fa-github"></i> GitHub Profile
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section class="section" id="contact">
+  <div class="container reveal">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact-grid">
+
+      <div class="card">
+        <h3>Let’s Talk</h3>
+        <ul class="contact-list">
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:s.anukeerthana.2005@gmail.com">
+              s.anukeerthana.2005@gmail.com
             </a>
-            <a href="https://www.linkedin.com/in/anu-keerthana-465692305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-               target="_blank" aria-label="LinkedIn">
-              <i class="fa-brands fa-linkedin"></i>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+917806935866">
+              +91 78069 35866
             </a>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
 
-      <div class="hero-image">
-        <!-- Replace profile.jpg with your uploaded image file name -->
-        <div class="hero-photo-ring">
-          <img src="Untitled design_20251210_150838_0000.png" alt="Anu Keerthana portrait" class="hero-photo" />
-        </div>
-        <div class="hero-badge">
-          <span class="dot"></span>
-          Open to Internships
-        </div>
-      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ===== Skills ===== -->
-  <section class="section" id="skills">
-    <div class="container reveal">
-      <h2 class="section-title">Skills</h2>
-      <p class="section-subtitle">Here are some of the tools and technologies I work with.</p>
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Anu Keerthana S</p>
+  </div>
+</footer>
 
-      <div class="skills-grid">
-        <div class="card">
-          <h3 class="card-title">Data &amp; Programming</h3>
-          <div class="skill-chips">
-            <span class="chip">Python</span>
-            <span class="chip">SQL</span>
-            <span class="chip">Excel</span>
-            <span class="chip">Power BI</span>
-            <span class="chip">Tableau</span>
-            <span class="chip">Google Colab</span>
-            <span class="chip">Data Analytics</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3 class="card-title">Web &amp; Others</h3>
-          <div class="skill-chips">
-            <span class="chip">HTML</span>
-            <span class="chip">CSS</span>
-            <span class="chip">JavaScript</span>
-            <span class="chip">Responsive Design</span>
-            <span class="chip">Git and Gitup</span>
-            <span class="chip">Google Colab</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Vision / Why hire me ===== -->
-  <section class="section" id="vision">
-    <div class="container reveal">
-      <h2 class="section-title">Visionary</h2>
-      <p class="section-subtitle">
-        Launching my career with a fresh perspective on data &amp; front-end engineering.
-      </p>
-
-      <div class="vision-grid">
-        <div class="card">
-          <h3 class="card-title">Personalisation</h3>
-          <p>
-            As a budding data enthusiast, I enjoy turning messy data into clear,
-            simple stories that help teams decide faster. I like combining
-            analytics with clean UI so that anyone can understand what the data
-            is trying to say.
-          </p>
-        </div>
-        <div class="card">
-          <h3 class="card-title">Reason to hire me</h3>
-          <p>
-            I am consistent, curious and quick to learn new tools.  
-            From Excel sheets to dashboards and small web apps, I enjoy
-            building everything step-by-step and documenting my work clearly.
-            I’m ready to grow with a team and take ownership of real projects.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Projects ===== -->
-  <section class="section" id="projects">
-    <div class="container reveal">
-      <h2 class="section-title">Projects</h2>
-      <p class="section-subtitle">
-        A few projects that reflect my interest in data and web development.
-      </p>
-
-      <div class="projects-grid">
-        <!-- Project 1 -->
-        <article class="card project-card">
-          <h3 class="card-title">Rent Calculator</h3>
-          <p class="project-text">
-            This web app will helps users quickly calculate by owner 
-            monthly rent of tenants  with a clean, responsive UI.
-          </p>
-          <p class="project-tech">Tech used: HTML,CSS</p>
-          <div class="project-links">
-            <a 
-              href="https://anu-505.github.io/Rent-calculator-/" 
-              target="_blank" class="btn btn-ghost">
-              <i class="fa-solid fa-play"></i> View Live
-            </a>
-            <a 
-              href="https://github.com/Anu-505/Rent-calculator-" 
-              target="_blank" class="btn btn-ghost">
-              <i class="fa-brands fa-github"></i> View Code
-            </a>
-          </div>
-        </article>
-
-        <!-- Project 2 -->
-        <article class="card project-card">
-          <h3 class="card-title">Spotify Data Analysis (Coming Soon)</h3>
-          <p class="project-text">
-            Data analytics project exploring Spotify tracks to understand
-            listening patterns, popular genres and audio features using Python
-            and BI tools.
-          </p>
-          <p class="project-tech">
-            <strong>Tech planned:<strong/> Python, Pandas, Power BI / Tableau
-          </p>
-          <div class="project-links">
-            <a 
-              href="https://github.com/Anu-505" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="btn btn-ghost"
-            >
-              <i class="fa-brands fa-github"></i> GitHub Profile
-            </a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Education ===== -->
-  <section class="section" id="education">
-    <div class="container reveal">
-      <h2 class="section-title">Education</h2>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>B.Tech – Artificial Intelligence &amp; Data Science</h3>
-            <p class="timeline-place">
-              New Prince Shri Bhavani College of Engineering &amp; Technology  
-              <span>Chennai, Tamil Nadu • 2023–2027</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>Higher Secondary (11th &amp; 12th)</h3>
-            <p class="timeline-place">
-              Jaigopal Garodia Government Girls' Higher Secondary School  
-              <span>Todd Hunter Nagar, Nandanam, Chennai – 600015</span>
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>SSLC (10th)</h3>
-            <p class="timeline-place">
-              St Francis Savio Matriculation Higher Secondary School  
-              <span>73B, Nagendra Nagar, Velachery Rd, Chennai – 600042</span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Contact ===== -->
-  <section class="section" id="contact">
-    <div class="container reveal">
-      <h2 class="section-title">Contact</h2>
-      <p class="section-subtitle">
-        Open to internships, projects and collaborations. Feel free to reach out!
-      </p>
-
-      <div class="contact-grid">
-        <div class="card">
-          <h3 class="card-title">Let’s talk</h3>
-          <ul class="contact-list">
-            <li>
-              <i class="fa-solid fa-envelope"></i>
-              <a href="mailto:s.anukeerthana.2005@gmail.com">s.anukeerthana.2005@gmail.com</a>
-            </li>
-            <li>
-              <i class="fa-solid fa-phone"></i>
-              <a href="tel:+917806935866">+91 78069 35866</a>
-            </li>
-            <li>
-              <i class="fa-solid fa-location-dot"></i>
-              Chennai, Tamil Nadu, India
-            </li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3 class="card-title">Profiles</h3>
-          <ul class="contact-list">
-            <li>
-              <i class="fa-brands fa-github"></i>
-              <a href="https://github.com/Anu-505" target="_blank">github.com/Anu-505</a>
-            </li>
-            <li>
-              <i class="fa-brands fa-linkedin"></i>
-              <a href="https://www.linkedin.com/in/anu-keerthana-465692305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                 target="_blank">
-                LinkedIn – Anu Keerthana
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Footer ===== -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> Anu Keerthana S. All rights reserved.</p>
-      <p class="footer-small">Designed &amp; coded with curiosity💅</p>
-    </div>
-  </footer>
-
-  <!-- JS -->
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

@@ -237,23 +237,23 @@ body {
   position: relative;
   justify-self: center;
 }
-
 .hero-photo-ring {
   position: relative;
   width: min(270px, 70vw);
-  aspect-ratio: 1/1;
-  border-radius: 999px;
-  padding: 5px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  padding: 6px;
+
   background: conic-gradient(
-    from 220deg,
+    from 180deg,
+    #7c3aed,
     #a855f7,
-    #ec4899,
-    #f97316,
-    #22c55e,
-    #3b82f6,
-    #a855f7
+    #c084fc,
+    #a855f7,
+    #7c3aed
   );
-  box-shadow: 0 18px 60px rgba(15, 23, 42, 0.9);
+
+  box-shadow: 0 20px 60px rgba(124, 58, 237, 0.6);
 }
 
 .hero-photo {
@@ -262,6 +262,15 @@ body {
   border-radius: inherit;
   object-fit: cover;
   border: 4px solid #020617;
+}
+@keyframes ringGlow {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.15); }
+  100% { filter: brightness(1); }
+}
+
+.hero-photo-ring {
+  animation: ringGlow 4s ease-in-out infinite;
 }
 
 .hero-photo-ring::before,

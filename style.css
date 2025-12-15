@@ -270,8 +270,34 @@ body {
 }
 
 .hero-photo-ring {
-  animation: ringGlow 4s ease-in-out infinite;
+  animation: 
+    ringGlow 4s ease-in-out infinite,
+    floatRing 6s ease-in-out infinite;
 }
+
+/* Glow animation */
+@keyframes ringGlow {
+  0% {
+    box-shadow: 0 0 0 6px rgba(168, 85, 247, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(168, 85, 247, 0.65);
+  }
+  100% {
+    box-shadow: 0 0 0 6px rgba(168, 85, 247, 0.35);
+  }
+}
+
+/* Floating animation */
+@keyframes floatRing {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
 
 .hero-photo-ring::before,
 .hero-photo-ring::after {

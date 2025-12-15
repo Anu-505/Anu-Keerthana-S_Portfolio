@@ -245,15 +245,15 @@ body {
   padding: 6px;
 
   background: conic-gradient(
-    from 180deg,
-    #7c3aed,
-    #a855f7,
-    #c084fc,
-    #a855f7,
-    #7c3aed
-  );
+  from 0deg,
+  #a855f7,
+  #9333ea,
+  #7e22ce,
+  #9333ea,
+  #a855f7
+);
 
-  box-shadow: 0 20px 60px rgba(124, 58, 237, 0.6);
+  box-shadow: 0 0 40px rgba(168, 85, 247, 0.6);
 }
 
 .hero-photo {

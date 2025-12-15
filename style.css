@@ -336,19 +336,19 @@ body {
 
 /* Sections */
 
-.section {
-  padding-block: 3.5rem;
+section {
+  animation: sectionFade 0.9s ease both;
 }
 
-.section-title {
-  font-size: 1.7rem;
-  margin-bottom: 0.3rem;
-}
-
-.section-subtitle {
-  font-size: 0.95rem;
-  color: var(--muted);
-  max-width: 32rem;
+@keyframes sectionFade {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Cards shared */
@@ -362,6 +362,8 @@ body {
   position: relative;
   overflow: hidden;
 }
+section:nth-child(2) { animation-delay: 0.1s; }
+section:nth-child(3) { animation-delay: 0.2s; }
 
 .card::before {
   content: "";

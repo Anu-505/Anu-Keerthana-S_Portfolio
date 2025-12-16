@@ -377,7 +377,7 @@ section {
   }
 }
 
-/* Card base (your existing styles are fine) */
+/* Card base */
 .card {
   background: radial-gradient(circle at top left, #1e293b, #020617);
   border-radius: 20px;
@@ -399,7 +399,7 @@ section {
     #a855f7,
     #38bdf8
   );
-  animation: rotateBorder 4s linear infinite;
+  animation: rotateBorder 6s linear infinite;
   z-index: -1;
 }
 
